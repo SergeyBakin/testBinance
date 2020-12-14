@@ -160,7 +160,7 @@ module.exports.calculateTimeMinAvgMax = (timeLatency) => {
     let min = timeLatency[0];
     let max = min;
     let avg = min;
-    for (i = 1; i < timeLatency.length; ++i) {
+    for (let i = 1; i < timeLatency.length; ++i) {
         if (timeLatency[i] > max) {
             max = timeLatency[i] || 0;
         }
